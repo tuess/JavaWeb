@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <filter>
+        <filter-name>Filer</filter-name>
+        <filter-class>com.Filter.Filter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filer</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+        <!--REQUEST拦截http请求，包括get和post-->
+        <dispatcher>REQUEST</dispatcher>
+        <!--FORWARD拦截通过请求转发方法发出的请求-->
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+</web-app>

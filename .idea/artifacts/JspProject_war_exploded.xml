@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JspProject:war exploded">
+    <output-path>$PROJECT_DIR$/../Java jdk/apache-tomcat-8.5.37/webapps/JspProject</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JspProject/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JspProject" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../Java jdk/jdk/jre/lib/sqljdbc42.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/sqljdbc42.jar" />
+          <element id="library" level="project" name="lib" />
+          <element id="file-copy" path="$PROJECT_DIR$/../Java jdk/文件上传jar包/commons-io-2.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../Java jdk/文件上传jar包/commons-fileupload-1.3.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.3.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.15.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
