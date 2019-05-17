@@ -20,8 +20,8 @@ public class TelServlet extends HttpServlet {
         String tel = request.getParameter("tel");
         PrintWriter out = response.getWriter();
 
-        Login login1 = new Login("10001","123",true);
-        Login login2 = new Login("10002","1234",true);
+        Login login1 = new Login("10001","12345",true);
+        Login login2 = new Login("10002","54321",true);
 
         JSONObject json = new JSONObject();
         json.put("login1",login1);
