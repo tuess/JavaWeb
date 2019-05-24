@@ -30,6 +30,7 @@ servlet验证表单
 <a href="Servlet?id=111&pwd=123">servlet</a><br>
 <a href="fileupload.jsp">文件上传</a><br>
 <a href="fileDownloadServlet?filename=1.txt">下载</a><br>
+<a href="excelDownloadServlet?filename=蔡徐坤篮球.xls">下载xls</a><br>
 <a href="ELServlet">EL</a><br>
 </body>
 </html>

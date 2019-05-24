@@ -26,10 +26,10 @@ public class fileDownloadServlet extends HttpServlet {
         }else{
             response.addHeader("content-Disposition","attachment;filename="+ URLEncoder.encode(filename,"UTF-8"));
         }
-        //将文件转化为输入流，读取到servlet中
+        //将文件转化为输入流，读取到servlet中（序列化）
         InputStream inputStream = getServletContext().getResourceAsStream("/res/"+filename);
         System.out.println("true");
-        //转化为输出流输出给用户
+        //转化为输出流输出给用户（反序列化）
         ServletOutputStream outputStream = response.getOutputStream();
         byte[] bs=new byte[100];
         int len=-1;
