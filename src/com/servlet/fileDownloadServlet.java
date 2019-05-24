@@ -31,7 +31,7 @@ public class fileDownloadServlet extends HttpServlet {
         System.out.println("true");
         //转化为输出流输出给用户（反序列化）
         ServletOutputStream outputStream = response.getOutputStream();
-        byte[] bs=new byte[100];
+        byte[] bs=new byte[1024];
         int len=-1;
         //inputStream.read(byte[] b)从输入流中读取一定数量的字节，并将其存储在缓冲区数组 b 中。以整数形式返回实际读取的字节数。返回0代表数组b的长度为0，返回-1代表读取完毕
         while ((len=inputStream.read(bs))!=-1){
